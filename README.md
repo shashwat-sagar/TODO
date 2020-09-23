@@ -1,2 +1,2 @@
 # TODO
-This is a simple TODO list web-app
+This is a simple TODO list web-app.
