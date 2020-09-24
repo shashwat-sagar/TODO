@@ -81,24 +81,3 @@ h1 {
   width: 350px;
   font-size: 1.4rem;
 }
-
-.editButton {
-  font-size: 1.4rem;
-  margin: 0 0.05rem;
-  font-family: "Hind", sans-serif;
-  background: none;
-  outline: none;
-  color: rgb(1, 131, 253);
-  border: none;
-  cursor: pointer;
-}
-
-.removeButton {
-  font-size: 1.4rem;
-  font-family: "Hind", sans-serif;
-  background: none;
-  outline: none;
-  color: rgb(247, 0, 0);
-  border: none;
-  cursor: pointer;
-}
