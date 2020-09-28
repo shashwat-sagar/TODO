@@ -81,3 +81,35 @@ h1 {
   width: 350px;
   font-size: 1.4rem;
 }
+
+.editButton {
+  padding: none;
+  margin-right: 10px;
+  background-color: transparent;
+  color: rgb(0, 255, 34);
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.removeButton {
+  padding: 0;
+  margin: none;
+  background-color: transparent;
+  color: red;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 550;
+  font-size: 1rem;
+}
+
+.editButton:hover {
+  cursor: pointer;
+  color: green;
+}
+
+.removeButton:hover {
+  cursor: pointer;
+  color: rgb(167, 4, 4);
+}
