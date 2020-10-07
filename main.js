@@ -1,3 +1,4 @@
+
 const addButton = document.querySelector(".addButton");
 var inputValue = document.querySelector(".input");
 const container = document.querySelector(".container");
@@ -34,7 +35,5 @@ class item {
   edit(input) {
     input.disabled = !input.disabled;
   }
-}
-
 new item("Driving Class");
 new item("Coding");
