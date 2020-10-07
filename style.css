@@ -83,33 +83,30 @@ h1 {
 }
 
 .editButton {
-  padding: none;
-  margin-right: 10px;
-  background-color: transparent;
-  color: rgb(0, 255, 34);
   border: none;
+  background: transparent;
+  color: rgb(30, 255, 30);
   text-transform: uppercase;
+  margin: 5px;
   font-weight: 600;
-  font-size: 1rem;
-}
-
-.removeButton {
-  padding: 0;
-  margin: none;
-  background-color: transparent;
-  color: red;
-  border: none;
-  text-transform: uppercase;
-  font-weight: 550;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .editButton:hover {
   cursor: pointer;
-  color: green;
+  color: rgb(1, 77, 1);
 }
 
+.removeButton {
+  border: none;
+  background: transparent;
+  color: red;
+  text-transform: uppercase;
+  margin: 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
 .removeButton:hover {
   cursor: pointer;
-  color: rgb(167, 4, 4);
+  color: rgb(122, 0, 0);
 }
