@@ -1,4 +1,3 @@
-
 const addButton = document.querySelector(".addButton");
 var inputValue = document.querySelector(".input");
 const container = document.querySelector(".container");
@@ -31,9 +30,14 @@ class item {
     itemBox.appendChild(removeButton);
 
     editButton.addEventListener("click", () => this.edit(input));
+    removeButton.addEventListener("click", () => this.remove(itemBox));
   }
   edit(input) {
     input.disabled = !input.disabled;
   }
-new item("Driving Class");
-new item("Coding");
+
+  remove(item) {
+    container.removeChild(item);
+  }
+}
+new item("TV");
