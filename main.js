@@ -1,5 +1,5 @@
 const addButton = document.querySelector(".addButton");
-var inputValue = document.querySelector(".input");
+var input = document.querySelector(".input");
 const container = document.querySelector(".container");
 
 class item {
@@ -40,4 +40,17 @@ class item {
     container.removeChild(item);
   }
 }
-new item("TV");
+//new item("TV");
+
+function check() {
+  if (input.value != "") {
+    new item(input.value);
+    input.value = "";
+  }
+}
+addButton.addEventListener("click", check);
+window.addEventListener("keydown", (e) => {
+  if (e.which == 15) {
+    check();
+  }
+});

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab");
 * {
   padding: 0;
   margin: 0;
@@ -32,11 +33,15 @@ h1 {
 
 .input_div .input {
   padding: 0.5rem 1rem;
+  border-color: #fff;
   height: 50px;
   outline: none;
-  background-color: #ffffff;
+  background-color: transparent;
+  color: #fff;
+  opacity: 95%;
   width: 450px;
-  font-size: 1.15rem;
+  font-weight: 500;
+  font-size: 1.6rem;
   margin: 0.25rem;
   border-radius: 25px;
 }
@@ -80,12 +85,14 @@ h1 {
   border: none;
   width: 350px;
   font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Zilla Slab";
 }
 
 .editButton {
   border: none;
   background: transparent;
-  color: rgb(30, 255, 30);
+  color: rgb(1, 131, 253);
   text-transform: uppercase;
   margin: 5px;
   font-weight: 600;
@@ -94,13 +101,13 @@ h1 {
 
 .editButton:hover {
   cursor: pointer;
-  color: rgb(1, 77, 1);
+  color: rgb(90, 201, 0);
 }
 
 .removeButton {
   border: none;
   background: transparent;
-  color: red;
+  color: rgb(1, 131, 253);
   text-transform: uppercase;
   margin: 5px;
   font-weight: 600;
@@ -108,5 +115,5 @@ h1 {
 }
 .removeButton:hover {
   cursor: pointer;
-  color: rgb(122, 0, 0);
+  color: rgb(255, 0, 0);
 }
