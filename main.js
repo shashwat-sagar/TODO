@@ -54,3 +54,9 @@ function check() {
     input.value = "";
   }
 }
+addButton.addEventListener("click", check);
+window.addEventListener("keydown", function (e) {
+  if (e.which == 13) {
+    check();
+  }
+});
