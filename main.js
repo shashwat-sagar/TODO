@@ -19,6 +19,7 @@ class item {
     editButton.innerHTML = "EDIT";
     editButton.classList.add("editButton");
 
+
     let removeButton = document.createElement("button");
     removeButton.innerHTML = "REMOVE";
     removeButton.classList.add("removeButton");
@@ -29,18 +30,23 @@ class item {
     itemBox.appendChild(editButton);
     itemBox.appendChild(removeButton);
 
-    editButton.addEventListener("click", () => this.edit(input));
-    removeButton.addEventListener("click", () => this.remove(itemBox));
-  }
-  edit(input) {
-    input.disabled = !input.disabled;
-  }
 
-  remove(item) {
-    container.removeChild(item);
+
+    removeButton.addEventListener("click", function () {
+      console.log('RemoveButton Clicked');
+      let del = document.getElementsByClassName("item");
+      console.log(del);
+      del[0].remove(itemBox)
+      // removeButton.addEventListener("click", () => this.remove(itemBox));
+
+    });
   }
 }
-//new item("TV");
+new item("TV");
+new item("TV");
+new item("TV");
+new item("TV");
+new item("TV");
 
 function check() {
   if (input.value != "") {
@@ -48,9 +54,3 @@ function check() {
     input.value = "";
   }
 }
-addButton.addEventListener("click", check);
-window.addEventListener("keydown", (e) => {
-  if (e.which == 15) {
-    check();
-  }
-});
