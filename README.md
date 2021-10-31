@@ -1,5 +1,5 @@
 # TODO
 
-This is a simple TODO list Web Application
-which is currently under development with the help of Pure HTML,
-CSS and JAVAScript.
+## List everything that we have to do
+-Purely made from HTML ,CSS and JAVA script
+-this is under development 
